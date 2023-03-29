@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<body  style="background-color: rgb(43, 211, 233);">
+    <div class="container">
+        <div class="text-center">
+            <div class="form-content">
+                <h1>Update SinhVien</h1>
+                <form action="/update" method="post">
+                    <input type="hidden" name="id" value="{{sinhVien._id}}" >
+                    <div class="filed input-filed">
+                        <label>Họ tên</label>
+                        <input type="text" name="hoten" value="{{sinhVien.hoten}}"  style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+                    <div class="filed input-filed">
+                        <label>Tuổi</label>
+                        <input type="number" name="tuoi"  value="{{sinhVien.tuoi}}"  style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+                    <div class="filed input-filed">
+                        <label>Địa chỉ</label>
+                        <input type="text" name="diachi" value="{{sinhVien.diachi}}"  style="width: 400px;border-radius: 10px;padding: 10px;">
+                    </div><br>
+
+                    <div class="filed button-filed">
+                        <button style="width: 400px;border-radius: 10px;padding: 10px;background-color: blue;color: aliceblue;">Sửa</button>
+                    </div><br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
